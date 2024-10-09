@@ -45,7 +45,7 @@ ul {
     padding-left: 0;
 }
 ul li {
-    background-color: #e9ecef;
+    color: rgb(0, 0, 0);
     margin: 5px 0;
     padding: 10px;
     border-radius: 5px;
@@ -56,9 +56,19 @@ ul li a {
     color: rgb(0, 0, 0);
     margin: 7px 0;
     padding: 0px;
-    
+    background-color: #e9ecef;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
     
 }
-ul li:hover {
+ul li a:hover {
     background-color: #d4d9dd;
+}
+
+li {
+    font-family: 'Playfair Display', serif;
+    color: rgb(0, 4, 255);
+    margin: 5px 0;
 }
