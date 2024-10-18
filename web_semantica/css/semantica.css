@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -8,7 +8,8 @@ body {
     margin-right: auto;
 }
 header, section header, section footer, footer {
-    background-color: #c9c9c9;
+    font-family: Arial, sans-serif;
+    background-color: #00d9ff;
     color: white;
     padding: 10px;
     text-align: center;
@@ -17,7 +18,7 @@ header img {
     width: 100px;
 }
 nav {
-    background-color: #444;
+    background-color: #3700ff;
     color: white;
     padding: 10px;
     text-align: center;
@@ -33,8 +34,11 @@ main {
 article {
     margin-bottom: 30px;
 }
-h2, h3 {
-    color: #4CAF50;
+h2{
+    color: #ffffff;
+}
+h3 {
+    color: #1000f5;
 }
 video, audio {
     width: 100%;
