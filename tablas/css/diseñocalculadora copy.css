@@ -1,18 +1,29 @@
 body {
-    font-family: 'Arial', sans-serif;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f2f2f2;
+    font-family: 'Arial', sans-serif;      /* Define la fuente principal  */
+    justify-content: center;               /* Centra el contenido horizontalmente  */
+    align-items: center;                   /* Centra el contenido verticalmente */
+    height: 100vh;                         /* Define la altura del cuerpo  */
+    background-color: #f2f2f2;             /* Fondo */
 }
 
 button {
-    padding: 20px;
-    font-size: 1.5em;
-    border: none;
-    border-radius: 20px;
-    background-color: #444;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    padding: 20px;                         /* Espacio interno  */
+    font-size: 1.5em;                      /* Tamaño de fuente  */
+    border: none;                          /* Elimina el borde del botón */
+    border-radius: 20px;                   /* Bordes redondeados */
+    background-color: #444;             
+    color: #fff;                         
+    cursor: pointer;                       /* Muestra el cursor */
+    transition: background-color 0.3s;     /* Transición  */
+}
+
+
+a {
+    padding: 10px 20px;                  
+    font-size: 16px;                       
+    color: #000000;                        
+    background-color: #ffffff;            
+    border-radius: 5px;                    
+    cursor: pointer;                      
+    text-decoration: none;                 
 }

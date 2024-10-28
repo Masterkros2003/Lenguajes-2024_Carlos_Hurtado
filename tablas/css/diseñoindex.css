@@ -39,3 +39,10 @@ h1 {
     background-color: #9c9c9c;
   
 }
+a {
+    padding: 10px 20px;
+    color: #000000;
+    background-color: #ffffff; 
+    border-radius: 5px;
+    text-decoration: none; 
+}

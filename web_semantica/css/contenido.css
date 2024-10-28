@@ -1,5 +1,6 @@
+/* Nos define la fuente, centra el texto, y ajusta los margenes */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; 
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -7,6 +8,26 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+/* Enlaces: padding: espacio alrededor del texto del boton
+font-size: 16px;: tamaño del texto 
+color: color del texto 
+background-color: color de fondo.
+border-radius: Redondea las esquinas
+cursor: pointer: Cambia el cursor al pasar sobre el enlace
+text-decoration: Elimina el subrayado  */
+a {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #000000;
+    background-color: #ffffff; 
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; 
+}
+/* background-color: Da un color de fondo al encabezado.
+color: Cambia el color del texto 
+padding: espacio alrededor del texto del boton
+text-align: texto en el centro */
 header, section header {
     font-family: Arial, sans-serif;
     background-color: #00d9ff;
@@ -14,7 +35,10 @@ header, section header {
     padding: 10px;
     text-align: center;
 }
-
+/* background-color: Color de fondo
+color: Definir el color
+padding: espacio elarededor del texto
+text-align: alineación del texto */
 section footer, footer {
     font-family: Arial, sans-serif;
     background-color: #000000;
@@ -32,8 +56,9 @@ nav {
     padding: 10px;
     text-align: center;
 }
+
 nav a {
-    color: white;
+    color: rgb(0, 0, 0);
     margin: 0 10px;
     text-decoration: none;
 }
