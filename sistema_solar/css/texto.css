@@ -18,3 +18,8 @@ a {
     cursor: pointer;                       /* Cambia el cursor a un puntero cuando se pasa sobre el botón */
     text-decoration: none; 
 }
+
+h2, h3{
+    font-family: 'Courier New', Courier, monospace;
+    color: #ff9900;
+}

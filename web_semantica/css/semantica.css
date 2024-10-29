@@ -87,3 +87,12 @@ figcaption {
     color: #555;
 }
 
+ 
+
+/* Estilo para el logo */
+.logo {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    margin-left: 120px;
+}
+
