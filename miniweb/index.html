@@ -5,11 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/indice/imagenes/fvicon.png" type="image/png">
-    <link rel="stylesheet" href="/miniweb/css/oscuro.css">
+    <link id="theme" rel="stylesheet"  type="text/css" href="css/claro.css" />
+
     <title>Miniweb</title>
+
+ 
     
 </head>
 <body>
+
+<script>
+        function cambiatema() {
+       var theme = document.getElementsByTagName('link')[0];
+        if (theme.getAttribute('href') == 'css/') {
+                theme.setAttribute('href', 'css/oscuro.css');
+                localStorage.setItem('tema', "css/oscuro.css");  
+            } else {
+                theme.setAttribute('href', 'css/claro.css');
+                localStorage.setItem('tema', "css/claro.css");        
+            }
+         }
+                 function tema_activo(){
+                   theme.setAttribute('href', localStorage.getItem("tema"));
+               }
+</script>
+
+    <button id="boton" onclick="cambiatema()">Cambio tema</button>
     <a href="/indice/index.html" class="boton">Indice</a>
     <h1>Enlaces a Archivos</h1>
 
