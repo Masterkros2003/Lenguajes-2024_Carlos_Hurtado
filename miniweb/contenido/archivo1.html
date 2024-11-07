@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="/miniweb/css/oscuro.css">
 </head>
 <body>
-    
+    <body onload="tema_activo()"></body>   
+    <script>
+        function tema_activo(){
+        theme.setAttribute('href', '../'+ localStorage.getItem("tema"));
+        }
+    </script>
+
     <h1> Archivo 1 </h1>
     <h2> Bienvenido al archivo 1 de Lenguaje de marcas </h2>
     <p1> Lenguaje de marcas </p1>
