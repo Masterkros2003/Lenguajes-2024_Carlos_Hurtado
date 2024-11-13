@@ -57,9 +57,6 @@ footer {
     float: left;
 }
 
-/*/////////////////////////*/
-/* CONFIGURACIÓN ADICIONAL*/
-/*///////////////////////*/
 
 img{
     width: 100px;
@@ -67,88 +64,54 @@ img{
 }
 
 .blanca {
-    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero3/blanco.png);
-    background-size: cover; /* Ancho y el alto del elemento ajustado. */
+    background-image: url(/ajedrez/contenido/imagenes/tablero3/blanco.png);
+    background-size: cover; 
 }
 
 .negra {
-    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero3/negro.png);
-    background-size: cover; /* Ancho y el alto del elemento ajustado. */
+    background-image: url(/ajedrez/contenido/imagenes/tablero3/negro.png);
+    background-size: cover; 
 }
 
 .horizontal{
     color: #e2cbac;
-    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero3/horizontal.png);
+    background-image: url(/ajedrez/contenido/imagenes/tablero3/horizontal.png);
     background-size: cover;
-    /*Configuración texto*/
     font-size: 30px;
-    text-align: center; /* Centra el texto horizontalmente */
-    line-height: 100px; /* Establece la altura de la línea igual a la altura de la casilla */
-
+    text-align: center;
+    line-height: 100px; 
 }
 
 .vertical{
     color: #e2cbac;
-    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero3/vertical.png);
-    background-size: cover; /* Ancho y el alto del elemento ajustado. */
-    /*Configuración texto*/
+    background-image: url(/ajedrez/contenido/imagenes/tablero3/vertical.png);
+    background-size: cover; 
     font-size: 30px;
-    text-align: center; /* Centra el texto horizontalmente */
-    line-height: 100px; /* Establece la altura de la línea igual a la altura de la casilla */
+    text-align: center; 
+    line-height: 100px;
 }
 
 .esquina1{
-    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero3/arribaIzquierda.png);
-    background-size: cover; /* Ancho y el alto del elemento ajustado. */
+    background-image: url(/ajedrez/contenido/imagenes/tablero3/arribaIzquierda.png);
+    background-size: cover; 
 }
 
 .esquina2{
-    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero3/arribaDerecha.png);
-    background-size: cover; /* Ancho y el alto del elemento ajustado. */
+    background-image: url(/ajedrez/contenido/imagenes/tablero3/arribaDerecha.png);
+    background-size: cover; 
 }
 
 .esquina3{
-    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero3/abajoIzquierda.png);
-    background-size: cover; /* Ancho y el alto del elemento ajustado. */
+    background-image: url(/ajedrez/contenido/imagenes/tablero3/abajoIzquierda.png);
+    background-size: cover; 
 }
 
 .esquina4{
-    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero3/abajoDerecha.png);
-    background-size: cover; /* Ancho y el alto del elemento ajustado. */
+    background-image: url(/ajedrez/contenido/imagenes/tablero3/abajoDerecha.png);
+    background-size: cover; 
 }
 
 .clear {
     clear: left;
 }
 
-/*//////////////////////////////////////*/
-/*//////////////////////////////////////*/
-/* BOTÓN PARA REGRESAR AL SUBIR ARRIBA DE LA PÁGINA PRINCIPAL */
-
-#boton {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%; /* Hace que el botón sea redondo */
-    overflow: hidden; /* Asegura que la imagen se mantenga dentro del círculo */
-    justify-content: center;  /* Centra la imagen dentro del botón */
-    align-items: center;  /* Alinea la imagen verticalmente */
-}
-
-#boton img {
-    width: 100%;  /* Asegura que la imagen llene todo el contenedor */
-    height: 100%;  /* Asegura que la imagen llene todo el contenedor */
-    border-radius: 50%; /* Asegura que la imagen también sea redonda */
-}
-
-/* PIE DE PÁGINA */
-footer {
-    background-color: #77777733; 
-    color: #FFFFFF;
-    width: 100%;  /* Ocupa todo el ancho */
-    text-align: center;  /* Centra el texto */
-    padding: 7px;
-    margin-top: auto;  /* Asegura que el footer esté siempre al final */
-}

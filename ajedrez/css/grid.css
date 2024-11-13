@@ -63,15 +63,15 @@ footer {
 }
 
 .blanca {
-    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero2/blanco.png);
+    background-image: url(/ajedrez/contenido/imagenes/tablero2/blanco.png);
 }
 
 .negra {
-    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero2/negro.png);
+    background-image: url(/ajedrez/contenido/imagenes/tablero2/negro.png);
 }
 
 .horizontal{
-    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero2/horizontal.png);
+    background-image: url(/ajedrez/contenido/imagenes/tablero2/horizontal.png);
     /* Configuración texto */
     color: #180e01;
     font-weight: bold;
@@ -80,7 +80,7 @@ footer {
 }
 
 .vertical{
-    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero2/vertical.png);
+    background-image: url(/ajedrez/contenido/imagenes/tablero2/vertical.png);
     /* Configuración texto */
     color: #180e01;
     font-weight: bold;
@@ -89,19 +89,19 @@ footer {
 }
 
 .esquina1{
-    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero2/arribaIzquierda.png);
+    background-image: url(/ajedrez/contenido/imagenes/tablero2/arribaIzquierda.png);
 }
 
 .esquina2{
-    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero2/arribaDerecha.png);
+    background-image: url(/ajedrez/contenido/imagenes/tablero2/arribaDerecha.png);
 }
 
 .esquina3{
-    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero2/abajoIzquierda.png);
+    background-image: url(/ajedrez/contenido/imagenes/tablero2/abajoIzquierda.png);
 }
 
 .esquina4{
-    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero2/abajoDerecha.png);
+    background-image: url(/ajedrez/contenido/imagenes/tablero2/abajoDerecha.png);
 }
 
 img{
@@ -109,34 +109,3 @@ img{
     height: 100px;
 }
 
-/*//////////////////////////////////////*/
-/*//////////////////////////////////////*/
-/* BOTÓN PARA REGRESAR AL SUBIR ARRIBA DE LA PÁGINA PRINCIPAL */
-
-#boton {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;/* Hace que el botón sea redondo */
-    overflow: hidden; /* Asegura que la imagen se mantenga dentro del círculo */
-    justify-content: center; /* Centra la imagen dentro del botón */
-    align-items: center; /* Alinea la imagen verticalmente */
-}
-
-#boton img {
-    width: 100%; 
-    height: 100%; 
-    border-radius: 50%; 
-}
-
-/* PIE DE PÁGINA */
-footer {
-    background-color: #77777733;
-    color: #FFFFFF;
-    width: 100%; /* Ocupa todo el ancho */
-    text-align: center; /* Centra el texto */
-    padding: 7px;
-    margin-top: auto; /* Asegura que el footer esté siempre al final */
-}

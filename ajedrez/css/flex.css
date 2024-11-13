@@ -4,51 +4,58 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    background-color: #f0f0f0; /* Light gray background */
 }
 
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #5a3000;
-    padding: 14px 20px;
-    color: white;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
 }
 
 header h1 {
-    font-size: 24px;
-    color: white;
-    text-align: center;
-    flex: 1;
+    font-size: 36px;
+    font-weight: bold;
 }
 
 nav, a {
     display: flex;
     justify-content: center;
     gap: 20px;
-    background-color: #ffc400;
-    padding: 5px 0;
+    background-color: #e0e0e0;
+    padding: 10px 0;
 }
 
 nav a {
-    color: white;
+    color: #333;
     text-decoration: none;
-    padding: 5px;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: #ccc;
 }
 
 footer {
-    background-color: #ffc400;
+    background-color: #333;
     color: #fff;
-    padding: 30px;
+    padding: 20px;
     text-align: center;
+}
+img{
+    width: 100px;
+    height: 100px;
 }
 
 .tablero {
-    width: 1000px;
-    height: 1000px;
-    margin: auto;
+    width: 800px;
+    height: 800px;
+    margin: 20px auto;
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .casilla {
@@ -61,35 +68,19 @@ footer {
 
 .blanca {
     background-image: url(/ajedrez/contenido/imagenes/tablero1/blanco.png);
+    background-color: #fff;
 }
 
 .negra {
-    background-image: url(/ajedrez/contenido/imagenes/tablero1/negro.png);
+    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero1/negro.png);
+    background-color: #333;
 }
 
-.horizontal{
-    color: #e2cbac;
-    background-image: url(/ajedrez/contenido/imagenes/tablero1/horizontal.png);
+.horizontal, .vertical {
+    color: #fff;
+    background-size: cover;
 }
 
-.vertical{
-    color: #e2cbac;
-    background-image: url(/ajedrez/contenido/imagenes/tablero1/vertical.png);
+.esquina1, .esquina2, .esquina3, .esquina4 {
+    background-size: cover;
 }
-
-.esquina1{
-    background-image: url(/ajedrez/contenido/imagenes/tablero1/arribaIzquierda.png);
-}
-
-.esquina2{
-    background-image: url(/ajedrez/contenido/imagenes/tablero1/arribaDerecha.png);
-}
-
-.esquina3{
-    background-image: url(/ajedrez/contenido/imagenes/tablero1/abajoIzquierda.png);
-}
-
-.esquina4{
-    background-image: url(/ajedrez/contenido/imagenes/tablero1/abajoDerecha.png);
-}
-

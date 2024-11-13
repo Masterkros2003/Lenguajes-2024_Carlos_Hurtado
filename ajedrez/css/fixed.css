@@ -77,8 +77,17 @@ footer {
     line-height: 100px;
 }
 
-.esquina1, .esquina2, .esquina3, .esquina4 {
-    background-color: #8B4513; 
+.esquina1 {
+    background-image: url(/ajedrez/contenido/imagenes/tablero4/arribaIzquierda.png)
+}
+.esquina2 {
+    background-image: url(/ajedrez/contenido/imagenes/tablero4/arribaDerecha.png)
+}
+.esquina3 {
+    background-image: url(/ajedrez/contenido/imagenes/tablero4/abajoIzquierda.png)
+}
+.esquina4 {
+    background-image: url(/ajedrez/contenido/imagenes/tablero4/abajoDerecha.png)
 }
 
 .tablero {
