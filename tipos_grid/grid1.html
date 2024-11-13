@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grid 1. Filas y columnas</title>
+  <style>
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+      box-sizing: border-box;
+
+    }
+
+    .grid-container1 {
+      background-color: #0a7436e0;
+      padding: 10px;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      /* grid-template-columns: 50% auto auto; */
+      /* grid-template-columns: 50% 50% 50%; */
+      /* grid-template-columns: 40% 40% 20%;  */
+
+      /* para comprobar rows le damos una altura */
+      /*height: 60vh; 
+      grid-template-rows: 20vh 20vh 10vh; */
+    }
+
+    .grid-item {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      font-size: 3em;
+      text-align: center;
+    }
+
+    .item1 {
+      background-color: bisque;
+      
+    }
+
+    /*esto es es para comprobar la union de dos "celdas"*/
+    .item56 {
+      grid-column: 2 / span 2;
+      grid-row: 2;
+    }
+
+    .item47 {
+      grid-column: 1;
+      grid-row: 2 /span 2;
+    }
+
+    /*esto para comprobar los contenidos de la celda*/
+    img {
+      float: left;
+      width: 200px;
+      margin: 10px;
+    }
+
+    .botijo {
+      font-size: 1.3em;
+      padding: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Grid 1 Filas y columnas</h1>
+  <p>Debe tener unelemento padre con la propiedad <code> Display:grid </code> o la propiedad
+    <code> Display:grid-inline </code>
+  </p>
+  <p>Los elementos hijo de un elemento grid se convierten en grid-item (celdas)</p>
+
+  <div class="grid-container1">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+    <div class="grid-item">7</div>
+    <div class="grid-item">8</div>
+    <div class="grid-item">9</div>
+  </div>
+ <br>
+  <div class="grid-container1">
+    <div class="grid-item item1">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item ">4</div>
+    <div class="grid-item item56">5 y 6</div>
+    <!-- <div class="grid-item">6</div> Este Item desaparece al estar unido al 5 -->
+    <div class="grid-item">7</div>
+    <div class="grid-item">8</div>
+    <!--           <div class="grid-item botijo"><h2>El botijo</h2><img src="botijo.jpg" alt="">Un botijo es un recipiente de barro cocido poroso, diseñado para beber y conservar fresca el agua. En alfarería se define como vasija de cuerpo esferoide, un asa en su parte superior, y con dos o más orificios </div>  -->
+    <div class="grid-item">9</div>
+  </div>
+  <br>
+  <div class="grid-container1">
+    <div class="grid-item item1">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item item47">4 y 7</div>
+    <div class="grid-item">5</div>
+     <div class="grid-item">6</div> 
+    <!-- <div class="grid-item">7</div> Este item desaparece alestar unico al 4 -->
+    <div class="grid-item">8</div>
+    <!--           <div class="grid-item botijo"><h2>El botijo</h2><img src="botijo.jpg" alt="">Un botijo es un recipiente de barro cocido poroso, diseñado para beber y conservar fresca el agua. En alfarería se define como vasija de cuerpo esferoide, un asa en su parte superior, y con dos o más orificios </div>  -->
+    <div class="grid-item">9</div>
+  </div>
+
+
+  
+  
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Main container styling */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 10px;
+            max-width: 800px;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+
+        /* General styles for each box */
+        .box {
+            background-color: #add8e6; /* Light blue */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        /* Row 1 */
+        .half-1, .half-2 {
+            grid-column: span 6;
+        }
+
+        /* Row 2 */
+        .third-1, .third-2, .third-3 {
+            grid-column: span 4;
+        }
+
+        /* Row 3 */
+        .quarter-1, .quarter-2, .quarter-3, .quarter-4 {
+            grid-column: span 3;
+        }
+
+        /* Row 4 */
+        .sixth-1, .sixth-2, .sixth-3, .sixth-4, .sixth-5, .sixth-6 {
+            grid-column: span 2;
+        }
+
+        /* Row 5 */
+        .custom-1, .custom-2 {
+            grid-column: span 3;
+        }
+
+        /* Row 6 */
+        .custom-3, .custom-4, .custom-5, .custom-6 {
+            grid-column: span 3;
+        }
+
+        /* Row 7 */
+        .twelfth-1, .twelfth-2, .twelfth-3, .twelfth-4, .twelfth-5, .twelfth-6 {
+            grid-column: span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Row 1: Mitad -->
+        <div class="box half-1">Mitad</div>
+        <div class="box half-2">Mitad</div>
+
+        <!-- Row 2: Tercio -->
+        <div class="box third-1">Tercio</div>
+        <div class="box third-2">Tercio</div>
+        <div class="box third-3">Tercio</div>
+
+        <!-- Row 3: Cuarto -->
+        <div class="box quarter-1">Cuarto</div>
+        <div class="box quarter-2">Cuarto</div>
+        <div class="box quarter-3">Cuarto</div>
+        <div class="box quarter-4">Cuarto</div>
+
+        <!-- Row 4: Sexto -->
+        <div class="box sixth-1">Sexto</div>
+        <div class="box sixth-2">Sexto</div>
+        <div class="box sixth-3">Sexto</div>
+        <div class="box sixth-4">Sexto</div>
+        <div class="box sixth-5">Sexto</div>
+        <div class="box sixth-6">Sexto</div>
+
+        <!-- Row 5: Custom sizes -->
+        <div class="box custom-1"></div>
+        <div class="box custom-2"></div>
+
+        <!-- Row 6: Custom sizes -->
+        <div class="box custom-3"></div>
+        <div class="box custom-4"></div>
+        <div class="box custom-5"></div>
+        <div class="box custom-6"></div>
+
+        <!-- Row 7: Twelfths -->
+        <div class="box twelfth-1"></div>
+        <div class="box twelfth-2"></div>
+        <div class="box twelfth-3"></div>
+        <div class="box twelfth-4"></div>
+        <div class="box twelfth-5"></div>
+        <div class="box twelfth-6"></div>
+    </div>
+</body>
+</html>

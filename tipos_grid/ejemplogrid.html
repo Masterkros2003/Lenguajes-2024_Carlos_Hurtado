@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        /* Basic reset */
+
+        .contenedor {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 2px;
+            max-width: 800px;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+
+        
+        .caja {
+            background-color: #add8e6; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            font-weight: bold;
+        }
+
+       
+        .mitad-1, .mitad-2 {
+            grid-column: span 6;
+        }
+
+        
+        .Tercio-1, .Tercio-2, .Tercio-3 {
+            grid-column: span 4;
+        }
+
+        
+        .cuarto-1, .cuarto-2, .cuarto-3, .cuarto-4 {
+            grid-column: span 3;
+        }
+
+        .sexto-1, .sexto-2, .sexto-3, .sexto-4, .sexto-5, .sexto-6 {
+            grid-column: span 2;
+        }
+
+      
+        .quinto-1, .quinto-2, quinto-3 {
+            grid-column: span 2;
+            
+        }
+        .nada1, .nada3{
+            grid-column: 1;
+            background-color: white;
+            
+        }
+        .nada2, .nada4{
+            grid-column: span 2;
+            background-color: white;
+            
+        }
+       
+
+       
+        .uno-1, .uno-2, .uno-3, .uno-4, .uno-5, .uno-6, .uno-7, .uno-8, .uno-9, .uno-10, .uno-11, .uno-12 {
+            grid-column: span 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <!-- Fila1-->
+        <div class="caja mitad-1">Mitad</div>
+        <div class="caja mitad-2">Mitad</div>
+
+        <!-- Fila2-->
+        <div class="caja Tercio-1">Tercio</div>
+        <div class="caja Tercio-2">Tercio</div>
+        <div class="caja Tercio-3">Tercio</div>
+
+        <!-- Fila3 -->
+        <div class="caja cuarto-1">Cuarto</div>
+        <div class="caja cuarto-2">Cuarto</div>
+        <div class="caja cuarto-3">Cuarto</div>
+        <div class="caja cuarto-4">Cuarto</div>
+
+        <!-- Fila4-->
+        <div class="caja sexto-1">Sexto</div>
+        <div class="caja sexto-2">Sexto</div>
+        <div class="caja sexto-3">Sexto</div>
+        <div class="caja sexto-4">Sexto</div>
+        <div class="caja sexto-5">Sexto</div>
+        <div class="caja sexto-6">Sexto</div>
+         
+
+        <!-- Fila5 -->
+        <div class="caja nada2"></div>
+        <div class="caja quinto-1">Sexto</div>   
+        <div class="caja nada1"></div>
+        <div class="caja quinto-2">Sexto</div>   
+        <div class="caja nada2"></div>
+       
+    
+        <!-- Fila6-->
+
+
+        <!-- Fila7-->
+        <div class="caja uno-1"></div>
+        <div class="caja uno-2"></div>
+        <div class="caja uno-3"></div>
+        <div class="caja uno-1"></div>
+        <div class="caja uno-1"></div>
+        <div class="caja uno-1"></div>
+        <div class="caja uno-1"></div>
+        <div class="caja uno-1"></div>
+        <div class="cajauno-1"></div>
+        <div class="uno-1"></div>
+        <div class="uno-1"></div>
+       
+
+       
+    </div>
+</body>
+</html>
