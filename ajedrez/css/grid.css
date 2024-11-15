@@ -63,15 +63,15 @@ footer {
 }
 
 .blanca {
-    background-image: url(/ajedrez/contenido/imagenes/tablero2/blanco.png);
+    background-color: #256132;
 }
 
 .negra {
-    background-image: url(/ajedrez/contenido/imagenes/tablero2/negro.png);
+    background-color: #00ff37;
 }
 
 .horizontal{
-    background-image: url(/ajedrez/contenido/imagenes/tablero2/horizontal.png);
+    background-color: #a5a5a5;
     /* Configuración texto */
     color: #180e01;
     font-weight: bold;
@@ -80,7 +80,7 @@ footer {
 }
 
 .vertical{
-    background-image: url(/ajedrez/contenido/imagenes/tablero2/vertical.png);
+    background-color: #a5a5a5;
     /* Configuración texto */
     color: #180e01;
     font-weight: bold;
@@ -89,19 +89,19 @@ footer {
 }
 
 .esquina1{
-    background-image: url(/ajedrez/contenido/imagenes/tablero2/arribaIzquierda.png);
+    background-color: #a5a5a5;
 }
 
 .esquina2{
-    background-image: url(/ajedrez/contenido/imagenes/tablero2/arribaDerecha.png);
+    background-color: #a5a5a5;
 }
 
 .esquina3{
-    background-image: url(/ajedrez/contenido/imagenes/tablero2/abajoIzquierda.png);
+    background-color: #a5a5a5;
 }
 
 .esquina4{
-    background-image: url(/ajedrez/contenido/imagenes/tablero2/abajoDerecha.png);
+    background-color: #a5a5a5;
 }
 
 img{

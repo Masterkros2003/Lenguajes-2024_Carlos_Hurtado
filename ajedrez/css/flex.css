@@ -67,12 +67,12 @@ img{
 }
 
 .blanca {
-    background-image: url(/ajedrez/contenido/imagenes/tablero1/blanco.png);
+ 
     background-color: #fff;
 }
 
 .negra {
-    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero1/negro.png);
+
     background-color: #333;
 }
 
