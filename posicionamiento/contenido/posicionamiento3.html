@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento</title>
+    <link rel="stylesheet" href="/Ejercicios/posicionamiento/css/posicionamiento3.css">
+    <link rel="shortcut icon" href="/Ejercicios/posicionamiento/imagenes/iconoWebPosicionamiento.png">
+</head>
+
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 33px;
+    padding: 20px;
+}
+
+p{
+    color: black;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+div.azul {
+    background-color: blue;
+    width: 100%;
+    height: 30%;
+}
+
+div.rojo {
+    background-color: red;
+    width: 25%; /* Ajusta el ancho */
+    height: 90%; /* Ajusta el largo */
+    float: left; 
+}
+
+div.verde {
+    background-color: green;
+    width: 75%; /* Ocupa el espacio restante en la fila */
+    height: 45%; /* Ocupa la mitad de la altura */
+    float: right; /* Alinea el div verde a la derecha */
+}
+
+div.amarillo {
+    background-color: yellow;
+    width: 75%; /* Ajusta el ancho */
+    height: 45%; /* Ocupa la mitad de la altura disponible */
+    float: right; /* Alinea el div amarillo a la derecha, debajo del verde */
+}
+
+
+
+
+</style>
+
+<body>
+    <main>
+        <div class="azul">
+            <h1 id="inicioPagina">Posicionamiento 3 <p>Azul</p></h1>
+        </div>
+        <div class="rojo">
+            <p>Rojo</p>
+        </div>
+        <div class="verde">
+            <p>Verde</p>
+        </div>
+        <div class="amarillo">
+            <p>Amarillo</p>
+        </div>
+    </main>
+
+   
+
+</body>
+
+</html>
