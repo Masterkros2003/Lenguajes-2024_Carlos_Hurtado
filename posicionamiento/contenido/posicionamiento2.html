@@ -10,10 +10,16 @@
 </head>
 
 <style>
-    body {
+body {
     font-family: Arial, sans-serif;
     min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
 }
+
+* {
+    height: 100%;
+    box-sizing: border-box;
+}
+
 
 h1 {
     color: white;
@@ -29,7 +35,6 @@ p{
     font-weight: bold;
     padding: 20px;
 }
-
 
 div.azul {
     background-color: blue;
@@ -60,11 +65,12 @@ div.amarillo {
 
 
 </style>
-
+</style>
+</head>
 <body>
     <main>
         <div class="azul">
-            <h1 id="inicioPagina">Posicionamiento 1 <p>Azul</p></h1>
+            <h1 id="inicioPagina">Posicionamiento 2 <p>Azul</p></h1>
         </div>
         <div class="rojo">
             <p>Rojo</p>
@@ -77,9 +83,5 @@ div.amarillo {
         </div>
     </main>
 
-   
-
-
 </body>
-
 </html>
