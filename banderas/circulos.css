@@ -1,0 +1,19 @@
+.japon{
+    background-image: radial-gradient(circle,red 33%, white 33% ,white);  
+  }
+  
+.banglades{
+      background-image: radial-gradient(circle,rgb(167, 0, 0) 33%, green 33% ,green);  
+  }
+.palaos{
+      background-image: radial-gradient(circle,yellow 33%, rgb(30, 150, 206) 33% ,rgb(21, 144, 216));  
+  }
+  
+.nigeria{
+    background: radial-gradient(circle, #008751 33.33%, white 33.33%, white 66.66%, #008751 66.66%);
+
+}
+
+.laos{
+    background:radial-gradient(70px at 50% 50%,#fff 0,#fff 35%,transparent 0,transparent 100%),linear-gradient(180deg,#ce1126 25%,#002868 0,#002868 75%,#ce1126 0)}
+            

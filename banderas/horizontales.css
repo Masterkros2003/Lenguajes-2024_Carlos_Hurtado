@@ -1,0 +1,43 @@
+.colombia{
+	background-image:linear-gradient(yellow 33%, blue 33%, blue 66.66%, red 66.66%);
+}
+
+
+.alemania{
+	background-image:linear-gradient(black 33%, red 33%, red 66.66%, yellow 66.66%);
+}
+
+.polonia{
+	background-image:linear-gradient(white 50%, red 50%, red);
+}
+.indonesia{
+    background: linear-gradient( red 50%, white 50%);
+
+}
+
+.luxemburgo{
+    background: linear-gradient( red 33.33%, white 33.33%, white 66.66%, #009e9f 66.66%);
+
+
+}
+.bolivia{
+    background: linear-gradient( red 33.33%, yellow 33.33%, yellow 66.66%, green 66.66%);
+
+}
+.leone{
+    background: linear-gradient( green 33.33%, white 33.33%, white 66.66%, blue 66.66%);
+
+}
+.lithuania{
+    background: linear-gradient( yellow 33.33%, green 33.33%, green 66.66%, red 66.66%);
+
+
+}
+.ucrania{
+    background: linear-gradient( rgb(0, 42, 255) 50%, rgb(247, 255, 1) 50%);
+
+}
+.armenia{
+    background: linear-gradient( red 33.33%, blue 33.33%, blue 66.66%, orange 66.66%);
+
+}
