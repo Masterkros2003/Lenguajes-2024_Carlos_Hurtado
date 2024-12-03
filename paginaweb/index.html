@@ -1,29 +1,37 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Personal</title>
-    <link rel="stylesheet" href="/paginaweb/estilo.css">
+    <title>Lenguaje de Marcas</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <header>
-        <h1>Mi Página Personal</h1>
-        <nav>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Índice</a></li>
+            <li><a href="quiensoy.html">Currículum</a></li>
+            <li><a href="temario.html">Temario</a></li>
+            <li><a href="trabajos.html">Ejercicios</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <h1>Lenguaje de Marcas</h1>
+        <p>Bienvenido a la asignatura Lenguaje de Marcas.</p>
+        <p>Aquí encontrarás toda la información sobre esta asignatura, incluyendo el temario, ejercicios prácticos y ejemplos aplicados.</p>
+        <section>
+
+            <h2>Secciones</h2>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="estudios.html">Estudios</a></li>
-                <li><a href="temario.html">Temas del Curso</a></li>
-                <li><a href="trabajos.html">Trabajos</a></li>
+                <li><a href="curriculum.html">Currículum</a>: Ejemplo de cómo estructurar un currículum utilizando HTML y CSS.</li>
+                <li><a href="temario.html">Temario</a>: Lista de temas que se abordan en la asignatura.</li>
+                <li><a href="ejercicios.html">Ejercicios</a>: Actividades prácticas para reforzar lo aprendido.</li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <h2>¿Quién soy?</h2>
-        <p>¡Hola! Soy [Tu Nombre], un apasionado/a del aprendizaje y la tecnología. Actualmente estoy cursando el curso de Lenguaje de Marcas, donde exploro el fascinante mundo de las tecnologías web.</p>
-    </main>
+        </section>
+    </div>
     <footer>
-        <p>Creado por [Tu Nombre] &copy; 2024</p>
+        <p>&copy; 2024 Diseños Web - Carlos Hurtado Cánovas</p>
     </footer>
 </body>
 </html>
