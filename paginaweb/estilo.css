@@ -1,7 +1,7 @@
 body {
     font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 20;
+    padding: 20;
     background-color: #f4f4f9;
     color: #333;
     height: 100vh;
@@ -35,7 +35,7 @@ body {
     text-decoration: underline;
 }
 
-.container {
+.contenedor {
     flex: 1;
     max-width: 900px;
     margin: auto;
@@ -53,14 +53,6 @@ body {
     background: linear-gradient(90deg, #00f7ffbe, #008bfd);    border: none;
     border-radius: 30px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-}
-
-.custom-button:hover {
-    transform: scale(1.1);
-
-    
-    
 }
 
 h2 {
