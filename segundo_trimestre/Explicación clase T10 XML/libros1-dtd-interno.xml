@@ -16,7 +16,7 @@
     <!--  <!ELEMENT precio (#PCDATA)>
     <!ELEMENT precio_iva (#PCDATA)> -->
 
-    <!-- <!ENTITY estado "agotado"> -->
+    <!ENTITY estado "agotado">
 
 
 ]>
@@ -26,8 +26,7 @@
     <autor>Autor 1</autor>
     <!-- <autor>Autor 2</autor> -->
     <capitulo>
-        <titulocap>Capitulo 1</titulocap>
-        <!-- <titulocap>Capitulo 1 &estado;</titulocap> -->
+        <titulocap>Capitulo 1 &estado;</titulocap>
         <texto>Aqui viene un texto mas largo con  un resumen capitulo 1</texto>
     </capitulo>
     <!--   <precio>56</precio> -->

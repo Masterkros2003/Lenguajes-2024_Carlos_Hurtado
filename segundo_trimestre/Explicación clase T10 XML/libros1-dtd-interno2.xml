@@ -33,7 +33,7 @@
     </capitulo>
     <!--   <precio>56</precio> -->
     <!-- <precio_iva>87</precio_iva> -->
-    <capitulo >
+    <capitulo paginas="30">
         <titulocap>Capitulo 1</titulocap>
         <!-- <titulocap>Capitulo 1 &estado;</titulocap> -->
         <texto>Aqui viene un texto mas largo con  un resumen capitulo 1</texto>
