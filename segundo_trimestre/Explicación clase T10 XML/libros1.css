@@ -1,0 +1,37 @@
+
+*{
+    margin: 0px; 
+    display:block;
+    box-sizing: border-box; 
+   }
+biblioteca {
+    background-color: #002E4C; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+libro{
+        background-color: #f1f1f1;
+        opacity: 0.8;
+        width: 300px;
+        margin: 10px;
+        padding: 1vw;
+        font-size: 1.2em;
+      }
+titulo{
+    font-size: 2em;
+    padding: .1em;
+    text-align: center;
+}
+autor {
+    display: inline;
+    color: rgb(214, 137, 36);
+    font-size: 1.3em;
+}
+capitulo{
+    font-weight: bold;
+}
+texto{
+    font-weight: 100;
+    font-size: 1em;
+}

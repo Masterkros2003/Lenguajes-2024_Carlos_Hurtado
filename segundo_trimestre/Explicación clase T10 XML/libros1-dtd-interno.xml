@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Las lineas de antes son el prologo y las siguientes el cuerpo -->
+
+<!-- Lo siguiete son la reglas qeu debe cumplor el documento-->
+<!DOCTYPE libro 
+[ 
+    <!ELEMENT libro (titulo, autor,capitulo )>
+    <!-- <!ELEMENT libro (titulo, autor+,capitulo )> -->
+   <!--  <!ELEMENT libro (titulo, autor,capitulo, (precio|precio_iva))> -->
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT autor (#PCDATA)>
+    <!ELEMENT capitulo (titulocap , texto)>
+    <!ELEMENT titulocap (#PCDATA)>
+    <!ELEMENT texto (#PCDATA)>
+   
+    <!--  <!ELEMENT precio (#PCDATA)>
+    <!ELEMENT precio_iva (#PCDATA)> -->
+
+    <!-- <!ENTITY estado "agotado"> -->
+
+
+]>
+<!-- y esta es la estructura del documento -->
+<libro>
+    <titulo>Titulo1</titulo>
+    <autor>Autor 1</autor>
+    <!-- <autor>Autor 2</autor> -->
+    <capitulo>
+        <titulocap>Capitulo 1</titulocap>
+        <!-- <titulocap>Capitulo 1 &estado;</titulocap> -->
+        <texto>Aqui viene un texto mas largo con  un resumen capitulo 1</texto>
+    </capitulo>
+    <!--   <precio>56</precio> -->
+    <!-- <precio_iva>87</precio_iva> -->
+</libro>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/css" href="libros1.css"?>
+
+<!DOCTYPE libro SYSTEM "libros1.dtd">
+
+<libro>
+    <titulo>Titulo1</titulo>
+    <autor>Autor 1</autor>
+    <autor>Autor 2</autor>
+    <autor>Autor 3</autor>
+    <capitulo>
+        <titulocap>Capitulo 1</titulocap>
+        <texto>Aqui viene un texto mas largo con  un resumen capitulo 1</texto>
+    </capitulo>
+</libro>

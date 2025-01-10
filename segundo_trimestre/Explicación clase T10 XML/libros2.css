@@ -1,0 +1,62 @@
+
+*{
+    margin: 0px; 
+    display:block;
+    box-sizing: border-box; 
+   }
+biblioteca {
+    background-color: #002E4C; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+libro{
+        background-color: #f1f1f1;
+        opacity: 0.8;
+        width: 40vw;
+        height: 30vw;
+        margin: 2vw;
+        padding: 1vw;
+        font-size: 1.2em;
+        overflow: auto;
+      }
+titulo{
+    font-size: 2em;
+    padding: .1em;
+    text-align: center;
+}
+autor {
+    display: inline;
+    color: rgb(214, 137, 36);
+    font-size: 1.3em;
+}
+capitulo{
+    font-weight: bold;
+}
+resumen{
+    font-weight: 100;
+    font-size: .8em;
+    margin: .5em;
+}
+portada{
+    width: 50%;
+    height:75%;
+    float: left;
+    margin:  .5em;
+}
+portada[foto="ciencia"]{
+    background-image: url("images/ciencia.jpg");
+    background-size: cover;
+}
+portada[foto="celestina"]{
+    background-image: url("images/lacelestina.jpg");
+    background-size: cover;
+}
+portada[foto="extranjero"]{
+    background-image: url("images/extranjero.jpg");
+    background-size: cover;
+}
+portada[foto="1984"]{
+    background-image: url("images/1984.jpg");
+    background-size: cover;
+}

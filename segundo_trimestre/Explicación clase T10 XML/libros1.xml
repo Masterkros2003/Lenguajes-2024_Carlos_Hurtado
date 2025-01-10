@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/css" href="libros1.css"?>
+
+<!-- Las lineas de antes son el prologo y las siguientes el cuerpo -->
+<biblioteca>
+<libro paginas="235">
+    <titulo>Titulo1</titulo>
+    <autor>Autor 1</autor>
+    <capitulo>
+        <titulocap>Capitulo 1</titulocap>
+        <!-- <texto>Resumen &lt; capitulo' 1</texto> -->
+        <texto>Aqui viene un texto mas largo con  un resumen capitulo 1</texto>
+    </capitulo>
+    <capitulo>
+        <titulocap>Capitulo 2</titulocap>
+        <texto>Aqui viene un texto mas largo con  un resumen capitulo 1</texto>
+    </capitulo>
+</libro>
+<libro paginas="135">
+    <titulo>Titulo 2</titulo>
+    <autor>Autor 2       Conserva los espacios</autor>
+    <capitulo>
+        <titulocap>Capitulo 1</titulocap>
+        <texto>Aqui viene un texto mas largo con  un resumen capitulo 1</texto>
+    </capitulo>
+</libro>
+<libro paginas="342">
+    <titulo>Titulo3</titulo>
+    <autor>Autor 3-1</autor>
+    <autor>Autor 3-2</autor>
+    <capitulo>
+        <titulocap>Capitulo 1</titulocap>
+        <texto>Aqui viene un texto mas largo con  un resumen capitulo 1</texto>
+    </capitulo>
+</libro>
+<libro>
+    <titulo>Titulo 4</titulo>
+    <autor>Autor 4</autor>
+    <capitulo>
+        <titulocap>Capitulo 1</titulocap>
+        <texto>Aqui viene un texto mas largo con  un resumen capitulo 1</texto>
+    </capitulo>
+</libro>
+
+
+</biblioteca>
