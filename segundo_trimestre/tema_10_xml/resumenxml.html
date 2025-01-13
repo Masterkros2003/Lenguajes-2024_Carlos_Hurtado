@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Carlos Hurtado">
+    <title>XML</title>
+</head>
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20;
+    padding: 20;
+    background-color: #f4f4f9;
+    color: #333;
+    height: 100vh;
+    flex-direction: column;
+}
+
+header {
+    background: #007acc;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+h2 {
+    padding-bottom: 10px;
+    color: #007acc;
+    margin-bottom: 0px;
+}
+h3 {
+    padding-bottom: 10px;
+    color: #02a89a;
+    margin-bottom: 10px;
+}
+
+
+ul, ol {
+    margin: 20px;
+}
+
+ol li {
+    margin-bottom: 10px;
+    font-family: Courier;
+}
+
+footer {
+    text-align: center;
+    background-color: #70c6ff;
+    padding: 30px 20px;
+}
+</style>
+<body>
+
+    <header>
+        <h1>Resumen XML</h1>
+    </header>
+    <main>
+
+        <h2>¿Qué es XML?</h2>
+        <p>Es  un lenguaje de marcado de propósito general definido por el W3C</p>
+        <p>El propósito principal del lenguaje es compartir datos a través de diferentes sistemas, como Internet.</p>
+        <ul>
+            <li>No es un sustituto de HTML.</li>
+            <li>No es un gestor de bases de datos.</li>
+            <li>No es un estándar de comunicación ni un lenguaje de programación.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Características de XML</h2>
+        <ul>
+            <li>Lenguaje de estructura libre: las etiquetas no están predefinidas.</li>
+            <li>Documentos validados y bien formados.</li>
+            <li>Sigue reglas estrictas de sintaxis, como el cierre obligatorio de etiquetas.</li>
+            <li>Usa espacios de nombres para evitar ambigüedades.</li>
+            <li>Consta de dos partes principales: el prólogo y el cuerpo.</li>
+            <li>Debe cumplir las reglas W3C para estar bien formado.</li>
+            <li>Utiliza esquemas en forma de árbol con una única raíz.</li>
+            <li>Los documentos se validan para asegurar su estructura correcta.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Estructura XML</h2>
+        <ul>
+            <li><strong>Prólogo:</strong></li>
+                <ol>Declaración XML</ol>
+                <ol>Informacion del documento</ol>
+            <li><strong>Cuerpo:</strong></li>
+                <ol>Árbol de contenido</ol>
+                <ol>Una sola raiz</ol>
+        </ul>
+    </section>
+    <section>
+        <h2>Validación XML</h2>
+        <p>Permite comprobar si un documento se ajusta a una serie de reglas predefinidas</p>
+        <ul>
+            <li><strong>DTD:</strong> Definición de Tipo de Documento para describir la estructura.</li>
+            <li><strong>XML Schema:</strong> Un lenguaje basado en XML que mejora el DTD.</li>
+
+
+            <li><strong>Un DTD describe la estructura del documentos</strong></li>
+                <ul>Elementos</ul>
+                <ul>Orden</ul>
+            <li><strong>Ubicación de DTD</strong></li>
+                <ul>Interno. En el propio documento</ul>
+                <ul>Externo, referenciado por URL</ul>
+                <ul>Mixto</ul>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Tipos de elementos DTD</h2>
+        <!-- Elemento -->
+        <h3>Elemento</h3>
+        <li><strong>Cardinalidad </strong> Número de veces que aparece el elemento descendiente</li>
+
+        <ol><strong>?: </strong> El elemento aparece 0 o 1 vez.</ol>
+        <ol><strong>*: </strong> Número de veces que aparece el elemento descendiente</ol>
+        <ol><strong>+: </strong> Número de veces que aparece el elemento descendiente</ol>
+
+        <li><strong>Secuencia </strong> Se indican los elementos que deben de aparecer en el fichero XML.</li>
+       <p>X, Y: Indica que el elemento X tiene que aparecer a continuación de Y.
+        (X|Y): Indica que aparece el elemento X o el elemento Y, pero no los dos al mismo tiempo.
+        </p>
+
+        <li><strong>Combinación </strong> Se pueden combinar los símbolos de secuencia y los de cardinalidad.
+            <!-- Atributo -->
+        <h3>Atributo</h3>
+
+        <p><code>&lt;!ATTLIST&gt;</code> elemento atributo tipo valor</p>
+        <h4>Tipos</h4>
+        <table>
+                <tr>
+                    <th>Propiedad</th>
+                    <th>Significado</th>
+                </tr>
+            <tbody>
+                <tr>
+                    <td>CDATA</td>
+                    <td>Cadena de texto. Valor alfanumérico.</td>
+                </tr>
+                <tr>
+                    <td>Enumeraciones</td>
+                    <td>Permite indicar varios valores.</td>
+                </tr>
+                <tr>
+                    <td>ENTITY</td>
+                    <td>Entidad definida previamente.</td>
+                </tr>
+                <tr>
+                    <td>ENTITIES</td>
+                    <td>Conjunto de entidades.</td>
+                </tr>
+                <tr>
+                    <td>IDREF</td>
+                    <td>Referencia al identificador de otro elemento.</td>
+                </tr>
+                <tr>
+                    <td>IDREFS</td>
+                    <td>Referencia a un conjunto de identificadores.</td>
+                </tr>
+                <tr>
+                    <td>ID</td>
+                    <td>Identificador único para identificar elementos.</td>
+                </tr>
+                <tr>
+                    <td>NOTATION</td>
+                    <td>Se indican datos que no son XML.</td>
+                </tr>
+                <tr>
+                    <td>NMTOKEN</td>
+                    <td>Un nombre sin espacios en blanco.</td>
+                </tr>
+                <tr>
+                    <td>NMTOKENS</td>
+                    <td>Lista de nombres.</td>
+                </tr>
+        </table>
+        <!-- Valores -->
+        <h4>Valores</h4>
+        <table>
+                <tr>
+                    <th>Propiedad</th>
+                    <th>Significado</th>
+                </tr>
+                <tr>
+                    <td>#REQUIRED</td>
+                    <td>El atributo es obligatorio.</td>
+                </tr>
+                <tr>
+                    <td>#IMPLIED</td>
+                    <td>El atributo es opcional.</td>
+                </tr>
+                <tr>
+                    <td>#FIXED valor</td>
+                    <td>El atributo es obligatorio y se le asigna un valor por defecto que es el único valor que puede tener.</td>
+                </tr>
+        </table>
+
+<!-- entidades -->
+        <h3>Entidades</h3>
+        <table>
+                <tr>
+                    <th>Entidad</th>
+                    <th>Carácter</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td>&amp;lt;</td>
+                    <td>&lt;</td>
+                    <td>Menor que</td>
+                </tr>
+                <tr>
+                    <td>&amp;gt;</td>
+                    <td>&gt;</td>
+                    <td>Mayor que</td>
+                </tr>
+                <tr>
+                    <td>&amp;amp;</td>
+                    <td>&amp;</td>
+                    <td>Ampersand</td>
+                </tr>
+                <tr>
+                    <td>&amp;quot;</td>
+                    <td>"</td>
+                    <td>Comilla doble</td>
+                </tr>
+                <tr>
+                    <td>&amp;apos;</td>
+                    <td>'</td>
+                    <td>Apóstrofe (o comilla sencilla)</td>
+                </tr>
+        </table>
+    </section>
+
+
+</main>
+<footer>
+    <p>Carlos Hurtado Cánovas. MEDAC 2025</p>
+</footer>
+</body>
+</html>
