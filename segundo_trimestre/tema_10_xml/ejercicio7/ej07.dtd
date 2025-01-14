@@ -1,0 +1,12 @@
+<!ELEMENT configuracion (informaciongeneral, basededatos)>
+<!ELEMENT informaciongeneral (nombre, version, autor)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT version (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT basededatos (host, puerto, usuario, contrasena, nombreBD)>
+<!ELEMENT host (#PCDATA)>
+<!ELEMENT puerto (#PCDATA)>
+<!ELEMENT usuario (#PCDATA)>
+<!ELEMENT contrasena (#PCDATA)>
+<!ELEMENT nombreBD (#PCDATA)>
+

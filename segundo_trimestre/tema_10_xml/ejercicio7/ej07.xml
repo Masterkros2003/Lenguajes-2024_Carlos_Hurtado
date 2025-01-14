@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuracion SYSTEM "ej07.dtd">
+
+<configuracion>
+    <informaciongeneral>
+        <nombre>MiAplicacion</nombre>
+        <version>2.1.0</version>
+        <autor>María López</autor>
+    </informaciongeneral>
+    
+    <basededatos>
+        <host>localhost</host>
+        <puerto>3306</puerto>
+        <usuario>root</usuario>
+        <contrasena>password123</contrasena>
+        <nombreBD>mi_base_de_datos</nombreBD>
+    </basededatos>
+</configuracion>
