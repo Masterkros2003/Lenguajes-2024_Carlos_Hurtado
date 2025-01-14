@@ -1,0 +1,10 @@
+<!ELEMENT gestion (alumno+)>
+<!ELEMENT alumno (nombre, apellidos, curso, asignaturas)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT curso (#PCDATA)>
+<!ELEMENT asignaturas (asignatura+)>
+<!ELEMENT asignatura (nombre, trimestre1, trimestre2, trimestre3)>
+<!ELEMENT trimestre1 (#PCDATA)>
+<!ELEMENT trimestre2 (#PCDATA)>
+<!ELEMENT trimestre3 (#PCDATA)>

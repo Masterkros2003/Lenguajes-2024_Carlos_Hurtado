@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pokemon SYSTEM "ej09.dtd">
+<pokemon>
+    <nombre>Bulbasur</nombre>
+    <pokedex>05</pokedex>
+    <tipo>Planta</tipo>
+    <genero>Masculino</genero>
+    <estado>
+        <habilidades>Latigo Sepa, Chupa Vida, Hoja Afilada</habilidades>
+        <nivel>16</nivel>
+        <fuerza>75</fuerza>
+        <evolucion>Ivysaur</evolucion>
+        <vida>100</vida>
+    </estado>
+</pokemon>

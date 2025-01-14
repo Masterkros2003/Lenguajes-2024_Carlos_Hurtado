@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gestion SYSTEM "ej08.dtd">
+<gestion>
+    <alumno>
+        <nombre>Carlos</nombre>
+        <apellidos>Hurtado Cánovas</apellidos>
+        <curso>2º DAW</curso>
+        <asignaturas>
+            <asignatura>
+                <nombre>Programación</nombre>
+                <trimestre1>8.5</trimestre1>
+                <trimestre2>7.8</trimestre2>
+                <trimestre3>9.2</trimestre3>
+            </asignatura>
+            <asignatura>
+                <nombre>Bases de Datos</nombre>
+                <trimestre1>7.0</trimestre1>
+                <trimestre2>8.0</trimestre2>
+                <trimestre3>8.5</trimestre3>
+            </asignatura>
+        </asignaturas>
+    </alumno>
+</gestion>

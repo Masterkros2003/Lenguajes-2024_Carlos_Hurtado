@@ -9,4 +9,3 @@
 <!ELEMENT usuario (#PCDATA)>
 <!ELEMENT contrasena (#PCDATA)>
 <!ELEMENT nombreBD (#PCDATA)>
-
