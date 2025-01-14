@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalogo SYSTEM "ej01.dtd">   <!-- enlace para unir el dtd con xml -->
+
+<!-- Ejercicio 1: Archivo XML para un Catálogo de Libros
+Crear un archivo XML que contenga un catálogo de libros, con elementos <libro>,  -->
+
+<catalogo>
+<!-- libro 1 -->
+    <libro>
+        <titulo>De animales a dioses</titulo>
+        <autor>Yuval Noah Harari</autor>
+        <resumen>Este libro analiza la historia de la humanidad desde los primeros cazadores-recolectores hasta la revolución científica. Harari explora cómo el Homo sapiens ha logrado dominar el planeta a través de su capacidad de crear mitos compartidos y cooperar a gran escala.</resumen>
+        <precio moneda="euros">18.99</precio>
+        <anopublicacion>2011</anopublicacion>
+    </libro>
+
+    <!-- libro2 -->
+    <libro>
+        <titulo>El alquimista</titulo>
+        <autor>Paulo Coelho</autor>
+        <resumen> La historia sigue a Santiago, un pastor andaluz que busca un tesoro en las pirámides de Egipto. Durante su viaje, descubre lecciones de vida, amor y destino, explorando el concepto de la "Leyenda Personal". Es una fábula inspiradora sobre perseguir los sueños.</resumen>
+        <precio moneda="euros">14.50</precio>
+        <anopublicacion>1988</anopublicacion>
+    </libro>
+
+
+    <!-- libro3 -->
+    <libro>
+        <titulo>La sombra del viento</titulo>
+        <autor>Carlos Ruiz</autor>
+        <resumen>Ambientado en la Barcelona de la posguerra, este libro sigue a Daniel, un joven que encuentra un ejemplar olvidado en el "Cementerio de los Libros Olvidados". La historia lo sumerge en un misterio sobre el autor y su conexión con oscuros secretos del pasado.</resumen>
+        <precio moneda="euros">16.75</precio>
+        <anopublicacion>2001</anopublicacion>
+    </libro>
+
+    <!-- libro 4 -->
+    <libro>
+        <titulo>Los pilares de la tierra</titulo>
+        <autor>Ken Follet</autor>
+        <resumen> Este épico drama histórico se desarrolla en la Inglaterra medieval y gira en torno a la construcción de una catedral en la ficticia ciudad de Kingsbridge. La historia entrelaza intrigas políticas, amor, traición y la lucha de personajes comunes por sobrevivir en una época turbulenta.</resumen>
+        <precio moneda="euros">19.99</precio>
+        <anopublicacion>1989</anopublicacion>
+    </libro>
+</catalogo>
+
+
+<!-- se tiene un elemento catalogo donde denttro de este contiene tres elementos libros donde cada libro tiene su atributo -->

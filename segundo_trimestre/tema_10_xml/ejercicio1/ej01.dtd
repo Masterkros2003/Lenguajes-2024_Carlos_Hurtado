@@ -1,0 +1,13 @@
+<!ELEMENT catalogo (libro+)>
+<!ELEMENT libro (titulo, autor, resumen, precio, anopublicacion)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT resumen (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ATTLIST precio moneda CDATA #REQUIRED>
+<!ELEMENT anopublicacion (#PCDATA)>
+
+
+<!-- #PCDATA se refiere a datos de texto
+    Cada elemento libro debe contener todos los elementos dados
+    # REQUIRED el atributo moneda es obligatorio y CDATA significa que el atributo acepta cualquier texto  -->
