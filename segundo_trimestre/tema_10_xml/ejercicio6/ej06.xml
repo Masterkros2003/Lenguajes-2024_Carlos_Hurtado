@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fichatecnica SYSTEM "ej06.dtd">
+<fichatecnica>
+    <marca>Volvo</marca>
+    <modelo>XC60</modelo>
+    <año>2023</año>
+    <matricula>1234-ABC</matricula>
+    <potencia unidad="CV">200</potencia>
+</fichatecnica>

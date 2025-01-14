@@ -1,0 +1,11 @@
+<!ELEMENT documento (datos)>
+<!ELEMENT datos (nombre, dni, informacion)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT imagen (#PCDATA)>
+<!ELEMENT dni (#PCDATA)>
+<!ELEMENT informacion (nombre, dni, fechanac, direccion, ciudad, sexo)>
+<!ELEMENT fechanac (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT validez (#PCDATA)>
+<!ELEMENT sexo (#PCDATA)>

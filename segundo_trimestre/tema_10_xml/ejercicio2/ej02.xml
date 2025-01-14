@@ -1,1 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE agenda SYSTEM "ej02.dtd">
+<agenda>
+    <contacto>
+        <nombre>Carlos Hurtado </nombre>
+        <edad>21</edad>
+        <telefono tipo="móvil">+34 666 000 666</telefono>
+        <correo>carlos@gmail.com</correo>
+        <ciudad>Jaén</ciudad>
+    </contacto>
+
+    <contacto>
+        <nombre>Alfonso Carmona</nombre>
+        <edad>25</edad>
+        <telefono tipo="fijo">+34 000 000 000</telefono>
+        <correo>alfonos@gmail.com</correo>
+        <ciudad>La Carlota</ciudad>
+    </contacto>
+
+    <contacto>
+        <nombre>Jesus Panadero</nombre>
+        <edad>19</edad>
+        <telefono tipo="móvil">+34 111 222 333</telefono>
+        <correo>jesus@gmail.com</correo>
+        <ciudad>Córdoba</ciudad>
+    </contacto>
+</agenda>

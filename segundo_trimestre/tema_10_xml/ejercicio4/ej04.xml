@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE documento SYSTEM "ej04.dtd">
+<documento>
+    <datos>
+        <nombre>Carlos Hurtado Cánovas</nombre>
+        <dni>12345678-A</dni>
+        <informacion>
+            <nombre>Carlos Hurtado Cánovas</nombre>
+            <dni>12345678-A</dni>
+            <fechanac>06-06-2003</fechanac>
+            <direccion>Calle Vazquez Aroca 35</direccion>
+            <ciudad>Cordoba</ciudad>
+            <sexo>Masculino</sexo>
+        </informacion>
+    </datos>
+</documento>

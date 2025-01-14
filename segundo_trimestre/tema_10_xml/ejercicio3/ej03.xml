@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE menu SYSTEM "ej03.dtd">
+<menu>
+
+    <item>
+        <nombre>Embutidos</nombre>
+        <precio moneda="EUR">9.50</precio>
+        <tipo>Entrante</tipo>
+        <categoria>Carne</categoria>
+    </item>
+
+    <item>
+        <nombre>Pasta Carbonara</nombre>
+        <precio moneda="EUR">12.00</precio>
+        <tipo>Primer Plato</tipo>
+        <categoria>Pasta</categoria>
+    </item>
+
+    <item>
+        <nombre>Chuleton de Buey</nombre>
+        <precio moneda="EUR">25.00</precio>
+        <tipo>Segundo Plato</tipo>
+        <categoria>Carne</categoria>
+    </item>
+
+    <item>
+        <nombre>Tiramisú</nombre>
+        <precio moneda="USD">5.00</precio>
+        <tipo>Postre</tipo>
+        <categoria>Dulce</categoria>
+    </item>
+</menu>

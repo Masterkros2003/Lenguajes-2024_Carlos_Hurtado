@@ -1,0 +1,7 @@
+<!ELEMENT fichatecnica (marca, modelo, año, matricula, potencia)>
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT modelo (#PCDATA)>
+<!ELEMENT año (#PCDATA)>
+<!ELEMENT matricula (#PCDATA)>
+<!ELEMENT potencia (#PCDATA)>
+<!ATTLIST potencia unidad CDATA #REQUIRED>

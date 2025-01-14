@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE documento SYSTEM "ej05.dtd">
+<documento>
+    <datos>
+        <titulo>Tarjeta de Crédito</titulo>
+        <informacion>
+            <nombre>Carlos Hurtado Cánovas</nombre>
+            <numero>1234-5678-9012-3456</numero>
+            <validez>01-2029</validez>
+            <credito>700 EUR</credito>
+        </informacion>
+    </datos>
+</documento>
