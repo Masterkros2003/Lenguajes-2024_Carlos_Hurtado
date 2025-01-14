@@ -1,0 +1,7 @@
+<!ELEMENT estacionmeteorologica (lugar, fecha, hora, temperatura, viento, lluvia)>
+<!ELEMENT lugar (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT hora (#PCDATA)>
+<!ELEMENT temperatura (#PCDATA)>
+<!ELEMENT viento (#PCDATA)>
+<!ELEMENT lluvia (#PCDATA)>

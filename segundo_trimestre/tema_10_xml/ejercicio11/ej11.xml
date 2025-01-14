@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiendaonline SYSTEM "ej11.dtd">
+<tiendaonline>
+
+    <producto>
+        <nombre>Samsung S24</nombre>
+        <categoria>Smartphone</categoria>
+        <precio>999.99</precio>
+        <stock>10</stock>
+    </producto>
+
+    <producto>
+        <nombre>Lavadora LG</nombre>
+        <categoria>Electronica Hogar</categoria>
+        <precio>249.99</precio>
+        <stock>30</stock>
+    </producto>
+
+    <producto>
+        <nombre>Maquinilla de Afeitar</nombre>
+        <categoria>Electrónica</categoria>
+        <precio>49.99</precio>
+        <stock>50</stock>
+    </producto>
+</tiendaonline>

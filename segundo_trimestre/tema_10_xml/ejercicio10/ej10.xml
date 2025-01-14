@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE estacionmeteorologica SYSTEM "ej10.dtd">
+
+<estacionmeteorologica>
+    <lugar>Córdoba, España</lugar>
+    <fecha>01-01-2025</fecha>
+    <hora>14:30</hora>
+    <temperatura>5°C</temperatura>
+    <viento>10 km/h</viento>
+    <lluvia>Si</lluvia>
+</estacionmeteorologica>

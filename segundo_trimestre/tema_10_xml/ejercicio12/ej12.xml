@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reservas SYSTEM "ej12.dtd">
+
+<reservas>
+    <vuelo>
+
+        <codigo>IB-1234</codigo>
+        <aerolinea>Iberia</aerolinea>
+        <origen>Madrid</origen>
+        <destino>Barcelona</destino>
+        <fecha>01-01-2025</fecha>
+        <horaSalida>08:00</horaSalida>
+        <horaLlegada>09:45</horaLlegada>
+
+        <pasajeros>
+
+            <pasajero>
+                <nombre>Carlos Hurtado</nombre>
+                <dni>12345678-A</dni>
+                <asiento>12-A</asiento>
+                <clase>Turista</clase>
+            </pasajero>
+
+            <pasajero>
+                <nombre>Jesus Panadero</nombre>
+                <dni>87654321-B</dni>
+                <asiento>12-B</asiento>
+                <clase>Turista</clase>
+            </pasajero>
+
+        </pasajeros>
+
+    </vuelo>
+</reservas>

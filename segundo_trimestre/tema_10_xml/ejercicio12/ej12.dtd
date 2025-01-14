@@ -1,0 +1,15 @@
+<!ELEMENT reservas (vuelo+)>
+<!ELEMENT vuelo (codigo, aerolinea, origen, destino, fecha, horaSalida, horaLlegada, pasajeros)>
+<!ELEMENT codigo (#PCDATA)>
+<!ELEMENT aerolinea (#PCDATA)>
+<!ELEMENT origen (#PCDATA)>
+<!ELEMENT destino (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT horaSalida (#PCDATA)>
+<!ELEMENT horaLlegada (#PCDATA)>
+<!ELEMENT pasajeros (pasajero+)>
+<!ELEMENT pasajero (nombre, dni, asiento, clase)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT dni (#PCDATA)>
+<!ELEMENT asiento (#PCDATA)>
+<!ELEMENT clase (#PCDATA)>

@@ -1,0 +1,6 @@
+ <!ELEMENT tiendaonline (producto+)>
+  <!ELEMENT producto (nombre, categoria, precio, stock)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT categoria (#PCDATA)>
+  <!ELEMENT precio (#PCDATA)>
+  <!ELEMENT stock (#PCDATA)>
