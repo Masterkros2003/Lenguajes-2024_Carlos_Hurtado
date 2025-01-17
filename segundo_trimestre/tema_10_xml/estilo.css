@@ -10,6 +10,17 @@ body {
     height: 100vh;
 }
 
+.logo img {
+    width: 50px;
+    height: auto; 
+    display: block;
+    margin: 0 auto; 
+    position: fixed; 
+    top: 10px; 
+    left: 10px; 
+    align-items: center;
+}
+
 .container {
     text-align: center;
     background: rgba(255, 255, 255, 0.9);
