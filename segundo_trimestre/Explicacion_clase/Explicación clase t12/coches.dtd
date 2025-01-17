@@ -1,0 +1,10 @@
+<!ELEMENT concesionario (coche+)>
+<!ELEMENT coche (marca,combustible,color,precio,precio_con_iva)>
+<!ATTLIST coche matricula NMTOKEN #REQUIRED>
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT combustible (#PCDATA)>
+<!ELEMENT color (#PCDATA)>
+<!ATTLIST color metalizado (S|N) #REQUIRED>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT precio_con_iva (#PCDATA)>
+<!ATTLIST precio_con_iva tipo CDATA #FIXED "16%">
