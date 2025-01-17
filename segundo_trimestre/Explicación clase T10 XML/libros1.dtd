@@ -1,6 +1,0 @@
-<!ELEMENT libro (titulo, autor+, capitulo)>
-    <!ELEMENT titulo (#PCDATA)>
-    <!ELEMENT autor (#PCDATA)>
-    <!ELEMENT capitulo (titulocap , texto)>
-    <!ELEMENT titulocap (#PCDATA)>
-    <!ELEMENT texto (#PCDATA)>
