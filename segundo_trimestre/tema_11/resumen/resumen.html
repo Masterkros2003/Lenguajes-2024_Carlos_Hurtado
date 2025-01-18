@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Carlos Hurtado">
+    <title>Validación XML Schema (XSD)</title>
+    <link rel="icon" href="/segundo_trimestre/imagenes/logo medac.png" type="image/png">
+
+</head>
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20;
+    padding: 20;
+    background-color: #f4f4f9;
+    color: #333;
+    height: 100vh;
+    flex-direction: column;
+}
+
+header {
+    background: #007acc;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+h2 {
+    padding-bottom: 10px;
+    color: #007acc;
+    margin-bottom: 0px;
+}
+h3 {
+    padding-bottom: 10px;
+    color: #02a89a;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: #70c6ff;
+    padding: 30px 20px;
+}
+</style>
+
+<body>
+    <body>
+        <header>
+            <h1>Validación XML Schema (XSD)</h1>
+            <p>Validación XML Schema (XSD)</p>
+        </header>
+        <main>
+            <section>
+                <h2>Definición y Propósito</h2>
+                <p>XML Schema (XSD) es un lenguaje que define la estructura y las reglas de un documento XML. Permite especificar elementos, atributos, tipos de datos, y valores predeterminados o fijos.</p>
+                <p>A diferencia de DTD, XSD utiliza sintaxis XML.</p>
+            </section>
+    
+            <section>
+                <h2>Estructura Básica</h2>
+                <p>Los archivos XSD tienen extensión <code>.xsd</code>. En un archivo XML, el esquema puede especificarse en la cabecera usando <code>xsi:noNamespaceSchemaLocation</code>.</p>
+            </section>
+    
+            <section>
+                <h2>Elementos Clave</h2>
+                <h3>Elementos Simples</h3>
+                <p>Los elementos simples están definidos con tipos predefinidos como cadenas (<code>xs:string</code>) o números enteros (<code>xs:integer</code>).</p>
+    
+                <h3>Elementos Complejos</h3>
+                <p>Permiten agrupar elementos secundarios en secuencias o elecciones. Por ejemplo, una persona puede tener nombre y edad definidos como elementos secundarios.</p>
+    
+                <h3>Restricciones</h3>
+                <p>Las restricciones limitan los valores permitidos para un elemento. Por ejemplo, la edad puede estar restringida a valores entre 0 y 120.</p>
+            </section>
+    
+            <section>
+                <h2>Documentación y Herramientas</h2>
+                <p>Los XSD pueden incluir documentación interna mediante etiquetas específicas como <code>&lt;xs:annotation&gt;</code> y <code>&lt;xs:documentation&gt;</code>.</p>
+            </section>
+        </main>
+<footer>
+    <p>Carlos Hurtado Cánovas. MEDAC 2025</p>
+</footer>
+</body>
+</html>
