@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Carlos Hurtado">
+    <title>Conversión y Adaptación de Documentos XML</title>
+    <link rel="icon" href="/segundo_trimestre/imagenes/logo medac.png" type="image/png">
+
+</head>
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20;
+    padding: 20;
+    background-color: #f4f4f9;
+    color: #333;
+    height: 100vh;
+    flex-direction: column;
+}
+
+header {
+    background: #007acc;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+h2 {
+    padding-bottom: 10px;
+    color: #007acc;
+    margin-bottom: 0px;
+}
+h3 {
+    padding-bottom: 10px;
+    color: #02a89a;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: #007acc;
+    padding: 30px 20px;
+}
+</style>
+
+</head>
+<body>
+    <header>
+        <h1>Transformaciones XSLT</h1>
+        <p>Resumen de los conceptos clave sobre XSLT y su uso en la transformación de documentos XML.</p>
+    </header>
+
+    <section>
+        <h2>¿Qué es XSLT?</h2>
+        <p>XSLT (eXtensible Stylesheet Language Transformations) es un lenguaje declarativo basado en patrones y reglas que permite transformar documentos XML en otros formatos como XML, HTML o texto plano. Utiliza XPath para navegar y seleccionar nodos en el documento XML.</p>
+    </section>
+
+    <section>
+        <h2>¿Por qué usar XSLT?</h2>
+        <ul>
+            <li>Presentación de datos (HTML + CSS).</li>
+            <li>Transformación de datos XML a otros formatos.</li>
+            <li>Generación de informes.</li>
+            <li>Integración de sistemas.</li>
+            <li>Procesamiento estructurado de documentos XML.</li>
+        </ul>
+    </section>
+
+    <section>
+            <h2>Estructura básica de una hoja de estilo XSLT</h2>
+            <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+    &lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"&gt;
+        &lt;xsl:output method="html" indent="yes"/&gt;
+        &lt;xsl:template match="/"&gt;
+            &lt;xsl:apply-templates /&gt;
+        &lt;/xsl:template&gt;
+    &lt;/xsl:stylesheet&gt;
+    </code></pre>
+    </section>
+
+    <section>
+        <h2>Proceso de transformación</h2>
+        <ol>
+            <li>El procesador construye el árbol del documento XML.</li>
+            <li>Recorre el árbol desde el nodo raíz aplicando las plantillas definidas en la hoja XSLT.</li>
+            <li>Cuando se recorren todos los nodos, la transformación finaliza.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Herramientas recomendadas</h2>
+        <ul>
+            <li><strong>Oxygen XML Editor:</strong> Editor multiplataforma para trabajar con XML y XSLT.</li>
+            <li><strong>Saxon:</strong> Procesador XSLT open-source.</li>
+            <li><strong>Xalan:</strong> Procesador XSLT open-source.</li>
+            <li><strong>Online XSLT Test Tool:</strong> Herramienta online para probar transformaciones XSLT.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Carlos Hurtado Cánovas. MEDAC 2025</p>
+    </footer>
+</body>
+</html>
