@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Especifica que el idioma de la página es español -->
+<head>
+    <meta charset="UTF-8"> <!-- Codificación de caracteres en UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página sea responsive -->
+    <title>Calculadora Funcional</title> <!-- Título que aparece en la pestaña del navegador -->
+</head>
+<body>
+    <!-- Entrada para el primer número -->
+    <label>Primer número: <input type="number" id="numero1"></label><br>
+
+    <!-- Entrada para el segundo número -->
+    <label>Segundo número: <input type="number" id="numero2"></label><br>
+
+    <!-- Botón que al hacer clic ejecutará la función calcular() -->
+    <button id="calcularBtn">Calcular</button><br>
+
+    <!-- Zonas para mostrar los resultados -->
+    <div>La suma es: <span id="suma"></span></div>
+    <div>El producto es: <span id="producto"></span></div>
+    <div>El número mayor es: <span id="mayor"></span></div>
+
+    <script>
+        // Función flecha que obtiene el valor numérico de un input por su ID
+        const getNumber = (id) => Number(document.getElementById(id).value);
+
+        // Función flecha que actualiza el contenido de un elemento por su ID
+        const setText = (id, value) => document.getElementById(id).textContent = value;
+        
+        // Función principal que realiza todos los cálculos
+        const calcular = () => {
+            // Se obtienen los valores numéricos de los inputs usando desestructuración
+            const [numero1, numero2] = [getNumber("numero1"), getNumber("numero2")];
+            
+            // Objeto con las operaciones encapsuladas como funciones flecha
+            const operaciones = {
+                suma: (a, b) => a + b,
+                producto: (a, b) => a * b,
+                mayor: (a, b) => (a === b ? "Los números son iguales" : Math.max(a, b))
+            };
+            
+            // Se actualizan los resultados en pantalla usando las funciones definidas
+            setText("suma", operaciones.suma(numero1, numero2));
+            setText("producto", operaciones.producto(numero1, numero2));
+            setText("mayor", operaciones.mayor(numero1, numero2));
+        };
+        
+        // Se añade el evento click al botón para ejecutar calcular()
+        document.getElementById("calcularBtn").addEventListener("click", calcular);
+    </script>
+</body>
+</html>

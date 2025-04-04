@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tablas de multiplicar</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+    }
+
+    body {
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      width: 100%;
+      height: 100%;
+      background-color: #ececec;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header, .footer {
+      background-color: #0288d1;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 1.5em;
+    }
+
+    .main {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .resultado-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .tabla {
+      display: inline-block;
+      width: 120px;
+      padding: 10px;
+      background-color: white;
+      border-radius: 0px;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">Tablas de Multiplicar</div>
+    <div class="main">
+      <label>
+        Número de tablas de multiplicar a generar: 
+        <input type="number" id="cantidad" min="1" />
+      </label>
+      <button onclick="generarTablas()">Calcular</button>
+      <div class="resultado-container" id="resultado"></div>
+    </div>
+    <div class="footer">Tablas Multiplicar 2025 MEDAC Carlos Hurtado Cánovas</div>
+  </div>
+
+  <script>
+    function generarTablas() {
+      const cantidad = Number(document.getElementById("cantidad").value);
+      const resultado = document.getElementById("resultado");
+      resultado.innerHTML = ""; // Limpiar resultados anteriores
+
+      for (let num = 1; num <= cantidad; num++) {
+        const tabla = document.createElement("div");
+        tabla.className = "tabla";
+
+        for (let i = 0; i <= 10; i++) {
+          tabla.innerHTML += `${num} x ${i} = ${num * i}<br>`;
+        }
+
+        resultado.appendChild(tabla);
+      }
+    }
+  </script>
+</body>
+</html>

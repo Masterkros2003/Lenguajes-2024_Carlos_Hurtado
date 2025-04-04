@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Se especifica que el idioma de la página es español -->
+<head>
+    <meta charset="UTF-8"> <!-- Codificación de caracteres en UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la web sea responsive -->
+    <title>Calculadora con Clases</title> <!-- Título que aparece en la pestaña del navegador -->
+</head>
+<body>
+    <!-- Entrada para el primer número -->
+    <label>Primer número: <input type="number" id="numero1"></label><br>
+    
+    <!-- Entrada para el segundo número -->
+    <label>Segundo número: <input type="number" id="numero2"></label><br>
+    
+    <!-- Botón para realizar el cálculo -->
+    <button id="calcularBtn">Calcular</button><br>
+
+    <!-- Salidas para los resultados -->
+    <div>La suma es: <span id="suma"></span></div>
+    <div>El producto es: <span id="producto"></span></div>
+    <div>El número mayor es: <span id="mayor"></span></div>
+
+    <script>
+        // Definición de la clase Calculadora
+        class Calculadora {
+            // Constructor que recibe los IDs de los elementos HTML
+            constructor(numero1Id, numero2Id, sumaId, productoId, mayorId) {
+                // Se obtienen los elementos del DOM y se guardan como propiedades del objeto
+                this.numero1Input = document.getElementById(numero1Id);
+                this.numero2Input = document.getElementById(numero2Id);
+                this.sumaOutput = document.getElementById(sumaId);
+                this.productoOutput = document.getElementById(productoId);
+                this.mayorOutput = document.getElementById(mayorId);
+            }
+            
+            // Método para obtener el valor numérico de un input
+            obtenerNumero(input) {
+                return Number(input.value); // Convierte el valor del input a número
+            }
+            
+            // Método principal que realiza los cálculos
+            calcular() {
+                const numero1 = this.obtenerNumero(this.numero1Input); // Obtener primer número
+                const numero2 = this.obtenerNumero(this.numero2Input); // Obtener segundo número
+                
+                // Mostrar los resultados en pantalla
+                this.mostrarResultados(numero1, numero2);
+            }
+            
+            // Método que muestra los resultados de suma, producto y número mayor
+            mostrarResultados(numero1, numero2) {
+                this.sumaOutput.textContent = numero1 + numero2; // Mostrar la suma
+                this.productoOutput.textContent = numero1 * numero2; // Mostrar el producto
+                // Mostrar el número mayor o indicar si son iguales
+                this.mayorOutput.textContent = numero1 === numero2 ? "Los números son iguales" : Math.max(numero1, numero2);
+            }
+        }
+
+        // Se crea una instancia de la clase Calculadora con los IDs de los elementos HTML
+        const calculadora = new Calculadora("numero1", "numero2", "suma", "producto", "mayor");
+
+        // Se agrega un listener
