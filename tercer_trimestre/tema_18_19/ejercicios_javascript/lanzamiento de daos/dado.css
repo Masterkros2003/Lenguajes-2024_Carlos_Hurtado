@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f8f8f8;
+  }
+  
+  .contenedor-dados {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .dado {
+    font-size: 3em;
+    background: #fff;
+    border: 2px solid #333;
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 8px #bbb;
+  }
+  
+  button {
+    padding: 10px 30px;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background: #4caf50;
+    color: #fff;
+    transition: background 0.2s;
+  }
+  
+  button:hover {
+    background: #388e3c;
+  }
+  
+  #resultado, #puntajeTotal {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  
