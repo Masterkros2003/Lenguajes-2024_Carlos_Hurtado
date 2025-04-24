@@ -1,26 +1,33 @@
+/* Estilo general de la página */
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
   min-height: 100vh;
-  background-image: url("./dado\ foto.jpg");
+
+  /* Fondo de pantalla con imagen */
+  background-image: url("fondo.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
   display: flex;
   flex-direction: column;
 }
 
+/* Estilo del encabezado */
 header {
+  background-color: rgba(2, 136, 209, 0.9); /* Azul con algo de transparencia */
   color: white;
   text-align: center;
-  padding: 20px 0;
-  font-size: 2rem;
+  padding: 10px 0;
+  font-size: 1rem;
   font-weight: 400;
   font-family: Arial, sans-serif;
   letter-spacing: 0.5px;
 }
 
+/* Contenedor principal */
 .contenido {
   flex: 1;
   display: flex;
@@ -30,12 +37,14 @@ header {
   padding: 40px;
 }
 
+/* Contenedor de los dados en horizontal */
 .dados-contenedor {
   display: flex;
   gap: 40px;
   margin-bottom: 20px;
 }
 
+/* Estilo de cada dado */
 .dados {
   width: 200px;
   height: 200px;
@@ -44,26 +53,30 @@ header {
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 0 0 3px black;
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 5px;
 }
 
+/* Cada punto (círculo) del dado */
 .circulo {
   width: 45px;
   height: 45px;
   background-color: black;
   border-radius: 50%;
   margin: auto;
-  visibility: hidden;
+  visibility: hidden; /* Ocultos por defecto */
 }
 
+/* Clase que muestra los puntos del dado activado */
 .visible {
   visibility: visible;
   box-shadow: 2px 2px 5px #777;
 }
 
+/* Resultado del lanzamiento */
 .resultado {
   font-size: 20px;
   margin-bottom: 20px;
@@ -73,10 +86,11 @@ header {
   text-shadow: 1px 1px 2px black;
 }
 
+/* Estilo del botón */
 button {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #944d0a;
+  background-color: #0288d1;
   color: white;
   border: none;
   border-radius: 5px;

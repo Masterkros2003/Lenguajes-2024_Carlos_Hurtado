@@ -4,17 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Juego de Dados</title>
-  <link rel="stylesheet" href="dado.css">
+  <!-- Enlazamos el archivo de estilos -->
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
+  <!-- Encabezado de la página -->
   <header>
     <h1>Juego de Dados</h1>
   </header>
 
+  <!-- Contenedor principal de los dados y el botón -->
   <div class="contenido">
+
+    <!-- Contenedor que agrupa los dos dados en horizontal -->
     <div class="dados-contenedor">
+
+      <!-- Primer dado -->
       <div class="dados" id="dado1">
+        <!-- 9 círculos (3x3) representando los puntos del dado -->
         <div class="circulo" id="d1p1"></div>
         <div class="circulo" id="d1p2"></div>
         <div class="circulo" id="d1p3"></div>
@@ -26,6 +34,7 @@
         <div class="circulo" id="d1p9"></div>
       </div>
 
+      <!-- Segundo dado -->
       <div class="dados" id="dado2">
         <div class="circulo" id="d2p1"></div>
         <div class="circulo" id="d2p2"></div>
@@ -39,10 +48,14 @@
       </div>
     </div>
 
+    <!-- Texto donde se mostrará el resultado de la tirada -->
     <div id="resultado" class="resultado">Pulsa "Lanzar Dados" para jugar</div>
+
+    <!-- Botón para lanzar los dados -->
     <button onclick="lanzarDados()">Lanzar Dados</button>
   </div>
 
-  <script src="dado.js"></script>
+  <!-- Enlazamos el archivo JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
