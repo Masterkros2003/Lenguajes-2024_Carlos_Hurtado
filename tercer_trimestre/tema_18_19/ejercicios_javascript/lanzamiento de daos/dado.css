@@ -1,47 +1,84 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background: #f8f8f8;
-  }
-  
-  .contenedor-dados {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-  }
-  
-  .dado {
-    font-size: 3em;
-    background: #fff;
-    border: 2px solid #333;
-    border-radius: 10px;
-    width: 80px;
-    height: 80px;
-    margin: 0 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 2px 2px 8px #bbb;
-  }
-  
-  button {
-    padding: 10px 30px;
-    font-size: 1.2em;
-    margin-bottom: 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    border: none;
-    background: #4caf50;
-    color: #fff;
-    transition: background 0.2s;
-  }
-  
-  button:hover {
-    background: #388e3c;
-  }
-  
-  #resultado, #puntajeTotal {
-    font-size: 1.2em;
-    margin-top: 10px;
-  }
-  
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  min-height: 100vh;
+  background-image: url("./dado\ foto.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: Arial, sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.contenido {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.dados-contenedor {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.dados {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border: 8px solid gray;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 0 3px black;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.circulo {
+  width: 45px;
+  height: 45px;
+  background-color: black;
+  border-radius: 50%;
+  margin: auto;
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+  box-shadow: 2px 2px 5px #777;
+}
+
+.resultado {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #944d0a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

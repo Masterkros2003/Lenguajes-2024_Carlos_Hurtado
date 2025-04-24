@@ -2,18 +2,47 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Lanzamiento de Dos Dados</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego de Dados</title>
   <link rel="stylesheet" href="dado.css">
 </head>
 <body>
-  <h1>Lanzamiento de Dos Dados</h1>
-  <div class="contenedor-dados">
-    <div id="dado1" class="dado">?</div>
-    <div id="dado2" class="dado">?</div>
+
+  <header>
+    <h1>Juego de Dados</h1>
+  </header>
+
+  <div class="contenido">
+    <div class="dados-contenedor">
+      <div class="dados" id="dado1">
+        <div class="circulo" id="d1p1"></div>
+        <div class="circulo" id="d1p2"></div>
+        <div class="circulo" id="d1p3"></div>
+        <div class="circulo" id="d1p4"></div>
+        <div class="circulo" id="d1p5"></div>
+        <div class="circulo" id="d1p6"></div>
+        <div class="circulo" id="d1p7"></div>
+        <div class="circulo" id="d1p8"></div>
+        <div class="circulo" id="d1p9"></div>
+      </div>
+
+      <div class="dados" id="dado2">
+        <div class="circulo" id="d2p1"></div>
+        <div class="circulo" id="d2p2"></div>
+        <div class="circulo" id="d2p3"></div>
+        <div class="circulo" id="d2p4"></div>
+        <div class="circulo" id="d2p5"></div>
+        <div class="circulo" id="d2p6"></div>
+        <div class="circulo" id="d2p7"></div>
+        <div class="circulo" id="d2p8"></div>
+        <div class="circulo" id="d2p9"></div>
+      </div>
+    </div>
+
+    <div id="resultado" class="resultado">Pulsa "Lanzar Dados" para jugar</div>
+    <button onclick="lanzarDados()">Lanzar Dados</button>
   </div>
-  <button id="lanzar">Lanzar Dados</button>
-  <div id="resultado"></div>
-  <div id="puntajeTotal">Puntaje total: 0</div>
+
   <script src="dado.js"></script>
 </body>
 </html>
