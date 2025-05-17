@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modificar Clases del DOM</title>
+  <link rel="stylesheet" href="manipulacion.css" />
+</head>
+<body>
+
+  <header>Modificar Clases del DOM</header>
+
+  <div class="main">
+    <div class="buttons-container">
+      <button onclick="card.classList.toggle('color-fondo')">Color Fondo</button>
+      <button onclick="card.classList.toggle('bordes-punteados')">Bordes Punteados</button>
+      <button onclick="card.classList.toggle('bordes-redondeados')">Bordes Redondeados</button>
+      <button onclick="card.classList.remove('desaparecer')">Aparecer</button>
+      <button onclick="card.classList.add('desaparecer')">Desaparecer</button>
+      <button onclick="card.classList.add('tamano-grande'); card.classList.remove('tamano-chico')">Tamaño Grande</button>
+      <button onclick="card.classList.add('tamano-chico'); card.classList.remove('tamano-grande')">Tamaño Chico</button>
+    </div>
+
+    <div id="card" class="card">Modifica la tarjeta</div>
+  </div>
+
+  <footer>Carlos Hurtado Cánovas MEDAC 2025</footer>
+
+  <script src="manipulacion.js"></script>
+</body>
+</html>

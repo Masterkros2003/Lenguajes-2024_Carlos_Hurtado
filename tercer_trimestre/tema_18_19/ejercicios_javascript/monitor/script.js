@@ -14,7 +14,6 @@ function logEvento(mensaje, tipo = "") {
   registro.scrollTop = registro.scrollHeight;
 }
 
-// Eventos básicos
 zona.addEventListener("click", () => logEvento("Click en la zona", "ok"));
 zona.addEventListener("mousemove", () => logEvento("Movimiento dentro de la zona"));
 window.addEventListener("resize", () => logEvento("Ventana redimensionada", "info"));

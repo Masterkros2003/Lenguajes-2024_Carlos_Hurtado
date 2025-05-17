@@ -4,96 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eventos - stopPropagation y preventDefault</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: sans-serif;
-    }
-
-    html, body {
-      width: 100%;
-      height: 100%;
-    }
-
-    body {
-      background-color: #f0f0f0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    header, footer {
-      width: 100%;
-      text-align: center;
-      background-color: #007bff;
-      color: white;
-      padding: 15px 0;
-      font-size: 1.5rem;
-    }
-
-    .contenedor {
-      background-color: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      width: 90%;
-      max-width: 500px;
-      text-align: center;
-      margin: 40px auto;
-    }
-
-    .padre {
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-
-    .hijo {
-      background-color: #66bfff;
-      margin: 10px 0;
-      padding: 10px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    .bloque {
-      margin-top: 20px;
-    }
-
-    .boton {
-      background-color: #007bff;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      margin-bottom: 10px;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-
-    a {
-      display: block;
-      margin-top: 10px;
-      color: #007bff;
-      text-decoration: none;
-    }
-
-    .log {
-      margin-top: 15px;
-      font-weight: bold;
-    }
-
-    footer {
-      margin-top: auto;
-    }
-  </style>
+  <link rel="stylesheet" href="eventos.css">
 </head>
 <body>
 
   <header>
-    Ejercicios JavaScript
+    Eventos - stopPropagation y preventDefault
   </header>
 
   <div class="contenedor">
@@ -115,47 +31,8 @@
     <div class="log" id="log"></div>
   </div>
 
-  <footer>Carlos Hurtado Cánovas</footer>
+  <footer>Carlos Hurtado Cánovas MEDAC 2025s</footer>
 
-  <script>
-    const padre = document.getElementById('padre');
-    const hijo1 = document.getElementById('hijo1');
-    const hijo2 = document.getElementById('hijo2');
-    const enlace = document.getElementById('enlace');
-    const botonToggle = document.getElementById('botonToggle');
-    const log = document.getElementById('log');
-
-    let enlaceActivo = true;
-
-    padre.addEventListener('click', () => {
-      log.textContent = "Clic en PADRE";
-      console.log("Clic en PADRE");
-    });
-
-    hijo1.addEventListener('click', (e) => {
-      e.stopPropagation();
-      log.textContent = "Clic en HIJO 1 (con stopPropagation)";
-      console.log("Clic en HIJO 1 (con stopPropagation)");
-    });
-
-    hijo2.addEventListener('click', () => {
-      log.textContent = "Clic en HIJO 2 (sin stopPropagation)";
-      console.log("Clic en HIJO 2 (sin stopPropagation)");
-    });
-
-    enlace.addEventListener('click', function(e) {
-      if (!enlaceActivo) {
-        e.preventDefault();
-        log.textContent = "Enlace desactivado con preventDefault()";
-        console.log("preventDefault aplicado al enlace");
-      }
-    });
-
-    botonToggle.addEventListener('click', () => {
-      enlaceActivo = !enlaceActivo;
-      botonToggle.textContent = enlaceActivo ? "Desactivar Enlace" : "Activar Enlace";
-      log.textContent = `Enlace ${enlaceActivo ? "activado" : "desactivado"}`;
-    });
-  </script>
+  <script src="eventos.js"></script>
 </body>
 </html>

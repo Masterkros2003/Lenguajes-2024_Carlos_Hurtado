@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página con TinyMCE y html2pdf</title>
+  <link rel="stylesheet" href="estilo.css" />
+
+  <!-- TinyMCE CDN -->
+<script src="tinymce/tinymce.min.js"></script>
+
+  <!-- html2pdf CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+  <header class="header">
+    <h1>Página con TinyMCE y html2pdf</h1>
+  </header>
+
+  <main>
+    <div class="contenedor">
+      <div class="editor">
+        <textarea id="editor">
+Esto es un editor de texto
+<ol>
+  <li>Uno</li>
+  <li>Dos</li>
+  <li>Tres</li>
+</ol>
+        </textarea>
+      </div>
+
+      <div class="acciones">
+        <button onclick="pasarADiv()">Pasar texto a div</button>
+        <button onclick="generarPDF()">📄 Generar PDF</button>
+        <div id="salida" class="salida"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>Carlos Hurtado Cánovas - MEDAC 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
